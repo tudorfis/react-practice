@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext, useState } from 'react'
+import ButtonDecrement from './components/ButtonDecrement'
+import ButtonIncrement from './components/ButtonIncrement'
+import DisplayCount from './components/DisplayCount'
 
-function App() {
+export const AppContext = createContext({ state: {}, actions: {} })
+
+export default function App() {
+  console.log('App')
+  const [count, setCount] = useState(4)
+  const [products, setProducts] = useState([])
+
+  const context = {
+    state: {
+      count,
+      products
+    },
+    actions: {
+      decrementCount() {
+        setCount(count - 1)
+      },
+      incrementCount() {
+        setCount(count + 1)
+      },
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppContext.Provider value={context}>
+      <ButtonDecrement />
+      <DisplayCount />
+      <ButtonIncrement />
+    </AppContext.Provider>
+  )
 }
-
-export default App;
