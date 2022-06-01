@@ -1,8 +1,8 @@
 import React from 'react'
-import AppCounter from './components/app-counter/AppCounter'
+import AppResourceType from './components/app-resource-type/AppResourceType'
 
 export default function App() {
   return (
-    <AppCounter />
+    <AppResourceType />
   )
 }
