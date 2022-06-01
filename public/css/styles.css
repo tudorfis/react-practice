@@ -1,0 +1,13 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+    font-size: 1.25rem;
+}
+
+body {
+    background-color: #555 !important;
+}
+
+button {
+    margin: .3rem;
+}
