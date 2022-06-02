@@ -6,8 +6,29 @@
 
 body {
     background-color: #555 !important;
+    padding: 1rem;
 }
 
 button {
+    background-color: #333;
     margin: .3rem;
+    cursor: pointer;
+}
+
+.active {
+    border: 3px solid white !important;
+}
+
+input {
+    color: black;
+}
+
+*::-webkit-scrollbar {
+    height: .3rem;
+    width: .3rem;
+    background: #333;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #ccc;
 }

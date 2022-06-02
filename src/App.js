@@ -1,8 +1,8 @@
 import React from 'react'
-import AppResourceType from './components/app-resource-type/AppResourceType'
+import AppUseRef2 from './components/app-practice/AppUseRef2'
 
 export default function App() {
   return (
-    <AppResourceType />
+    <AppUseRef2 />
   )
 }
