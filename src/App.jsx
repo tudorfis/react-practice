@@ -1,8 +1,8 @@
 import React from 'react'
-import AppUseRef2 from './components/app-practice/AppUseRef2'
+import AppTodos from './components/app-practice/AppTodos'
 
 export default function App() {
   return (
-    <AppUseRef2 />
+    <AppTodos />
   )
 }

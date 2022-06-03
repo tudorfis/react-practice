@@ -18,7 +18,6 @@ export default function AppUseRef2() {
             }
 
             await setItems(resources.current[resourceType])
-
         })()
     }, [resourceType])
 
